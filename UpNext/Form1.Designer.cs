@@ -28,58 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBuscarActualizaciones = new System.Windows.Forms.Button();
-            this.txtLog = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // btnBuscarActualizaciones
-            // 
-            this.btnBuscarActualizaciones.Location = new System.Drawing.Point(277, 122);
-            this.btnBuscarActualizaciones.Name = "btnBuscarActualizaciones";
-            this.btnBuscarActualizaciones.Size = new System.Drawing.Size(167, 36);
-            this.btnBuscarActualizaciones.TabIndex = 0;
-            this.btnBuscarActualizaciones.Text = "Buscar Actualizaciones";
-            this.btnBuscarActualizaciones.UseVisualStyleBackColor = true;
-            // 
-            // txtLog
-            // 
-            this.txtLog.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtLog.Location = new System.Drawing.Point(0, 250);
-            this.txtLog.Multiline = true;
-            this.txtLog.Name = "txtLog";
-            this.txtLog.Size = new System.Drawing.Size(800, 200);
-            this.txtLog.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(729, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtLog);
-            this.Controls.Add(this.btnBuscarActualizaciones);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnBuscarActualizaciones;
-        private System.Windows.Forms.TextBox txtLog;
-        private System.Windows.Forms.Label label1;
     }
 }
 

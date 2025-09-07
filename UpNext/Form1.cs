@@ -44,12 +44,12 @@ namespace UpNext
                 _btn.Enabled = false;
                 Log("Comprobando actualizaciones...");
 
-                // ⚡ Cambia "owner/repo" por tu repositorio de GitHub.
-                var gh = new GithubSource("owner/repo", null, false, null);
+                // ⚡ Para repos públicos pasa "null" como token
+                var gh = new GithubSource("https://github.com/Gustavo7239/UpNext", null, false, null);
 
                 var mgr = new UpdateManager(gh);
 
-                var info = await mgr.CheckForUpdatesAsync(); // null si no hay update
+                var info = await mgr.CheckForUpdatesAsync();
                 if (info == null)
                 {
                     Log("No hay actualizaciones disponibles.");
@@ -66,7 +66,6 @@ namespace UpNext
 
                 Log("Aplicando actualización y reiniciando...");
                 await mgr.WaitExitThenApplyUpdatesAsync(info, restart: true);
-                // ⚠️ Esta línea no continúa: el updater reinicia la app actualizada.
             }
             catch (Exception ex)
             {
@@ -77,5 +76,6 @@ namespace UpNext
                 _btn.Enabled = true;
             }
         }
+
     }
 }
